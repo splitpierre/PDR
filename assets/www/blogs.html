@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.3.1.min.js"></script>
+        <script>
+			if (window.screen.height==568) { // iPhone 4"
+			document.querySelector("meta[name=viewport]").content="width=320.1";
+			}
+		</script>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <title>Ponto de Referência</title>
+		<script>
+			function onLoad() {
+				document.addEventListener("online", onOnline, false);
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			// Cordova is loaded and it is now safe to make calls Cordova methods
+			//
+			function onDeviceReady() {
+				document.addEventListener("offline", onOffline, false);
+			}
+
+			// Handle the online event
+			//
+			function onOnline() {
+			}
+			function onOffline() {
+				navigator.app.exitApp();
+			}
+			
+			function checkConnection() {
+				var networkState = navigator.network.connection.type;
+
+				var states = {};
+				states[Connection.UNKNOWN]  = 'Unknown connection';
+				states[Connection.ETHERNET] = 'Ethernet connection';
+				states[Connection.WIFI]     = 'WiFi connection';
+				states[Connection.CELL_2G]  = 'Cell 2G connection';
+				states[Connection.CELL_3G]  = 'Cell 3G connection';
+				states[Connection.CELL_4G]  = 'Cell 4G connection';
+				states[Connection.NONE]     = 'No network connection';
+		
+				document.getElementById ("inputState").value = states[networkState]
+					
+				alert('Connection type: ' + states[networkState]);
+				
+			
+			
+			}
+		</script>
+    </head>
+	
+    <body>
+        <!-- Start of first page: #one -->
+	<div data-role="page" >
+
+		<div data-role="header">
+			<a href="main.html" data-rel="back">Home</a>
+			<div class="logo"></div>
+		</div><!-- /header -->
+
+		<div data-role="content" >
+		<div class="shadow1box"><img src="img/shadow1.png" class="shadow1" alt="shadow"></div>
+			<hr class="ornamental"/>
+				<h3 class="home-title">Blogs são Pontos de Referência</h3>
+			<hr class="ornamental"/>
+			<div class="content-padd">
+				<!-- navigation -->
+				<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
+					<li><a href="blog-oca.html" data-transition="slide" rel="external" data-prefetch>Oca Bertaso</a></li>
+					<li><a href="blog-edmour.html" data-transition="slide" rel="external" data-prefetch>Edmour Saiani</a></li>
+					<li><a href="blog-fred.html" data-transition="slide" rel="external" data-prefetch>Fred Alecrim - Uaugomais</a></li>
+					<li><a href="blog-sig.html" data-transition="slide" rel="external" data-prefetch>Blog do Sigefredo</a></li>
+					<li><a href="blog-elo.html" data-transition="slide" rel="external" data-prefetch>Elogios por Dia</a></li>
+				</ul>
+				<div class="shadow2box"><img src="img/shadow2.png" class="shadow2" alt="shadow"></div>
+				<!-- /navigation -->
+			</div>
+		</div><!-- /content -->
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="custom-icons">
+				<ul>
+					<li><a href="main.html" id="home2" rel="external" data-icon="custom" data-theme="b">Home</a></li>
+					<li><a href="http://goo.gl/maps/oMCPb" id="map" data-icon="custom" data-theme="b">Direções</a></li>
+					<li><a href="tel:2122663533" id="cell" data-icon="custom" data-theme="b">Falando</a></li>
+					<li><a href="produtos.html" id="presentation" data-icon="custom" data-theme="b" data-ajax="false">Produtos</a></li>
+					<li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b" data-ajax="false">Tweets</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+		<!-- /footer -->
+	</div><!-- /page one -->
+
+		
+		
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<script>
+			if (window.screen.height==568) { // iPhone 4"
+			document.querySelector("meta[name=viewport]").content="width=320.1";
+			}
+		</script>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <title>Ponto de Referência</title>
+		<!--<script>
+			$( document ).bind( "mobileinit", function() {
+				// Make your jQuery Mobile framework configuration changes here!
+
+				$.mobile.allowCrossDomainPages = true;
+			});
+		</script>-->
+		
+		<script>
+			// Wait for Cordova to load
+			// 
+			//document.addEventListener("deviceready", onDeviceReady, false);
+
+			// Cordova is loaded and it is now safe to make calls Cordova methods
+			//
+			//function onDeviceReady() {
+			//	checkConnection();
+			//	if (inputState.value != 'No network connection') {
+			//	document.getElementById("Elo").setAttribute('href', 'http://iemobile.com.br/pdr/html/elogios.php');
+			//} else  {
+            //    document.getElementById("Elo").setAttribute('href', '#');
+            //}
+			
+			
+			//}
+			
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			// Cordova is loaded and it is now safe to make calls Cordova methods
+			//
+			function onDeviceReady() {
+				
+			}
+
+
+			
+			function checkConnection() {
+				var networkState = navigator.network.connection.type;
+
+				var states = {};
+				states[Connection.UNKNOWN]  = 'Por favor, se conecte para acessar esta página.';
+				states[Connection.ETHERNET] = 'Ethernet connection';
+				states[Connection.WIFI]     = 'WiFi connection';
+				states[Connection.CELL_2G]  = 'Cell 2G connection';
+				states[Connection.CELL_3G]  = 'Cell 3G connection';
+				states[Connection.CELL_4G]  = 'Cell 4G connection';
+				states[Connection.NONE]     = 'Por favor, se conecte para acessar esta página.';
+		
+				// document.getElementById ("inputState").value = states[networkState]
+					
+				//alert('Connection type: ' + states[networkState]);
+				
+				if (states[networkState] != "Por favor, se conecte para acessar esta página.") {
+					return false;
+				} else {
+					alert('Erro: ' + states[networkState]);
+					navigator.app.exitApp();
+				}
+				
+				
+			
+			}
+			
+
+		</script>
+    </head>
+	
+    <body onload="onLoad()">											
+	
+	<!-- Start of first page: #main -->
+	<div data-role="page" id="main" >
+	<!--
+	<input data-role="button" type="button" value="Test" onclick="checkConnection()" /> <br>
+	<input type="text" value="" id="inputState" />
+	-->
+		<div data-role="header">
+			<div class="logo"></div>
+		</div><!-- /header -->
+
+		<div data-role="content" >
+		<div class="shadow1box"><img src="img/shadow1.png" class="shadow1" alt="shadow"></div>
+			<hr class="ornamental"/>
+				<h3 class="home-title">Quer ser um Ponto de Referência?</h3>
+			<hr class="ornamental"/>
+			<div class="content-padd">
+				<!-- navigation -->
+				<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
+					 
+					<li><a href="a-ponto.html" data-transition="slide" rel="external" data-prefetch>A Ponto de Referência</a></li>
+					<li><a href="produtos.html" data-transition="slide" rel="external" data-prefetch>Produtos</a></li>
+					<li><a href="clientes.html" data-transition="slide" rel="external" data-prefetch>Clientes</a></li>
+					<li><a id="Elo" href="http://iemobile.com.br/pdr/html/elogios.php" onclick="checkConnection()" data-transition="slide" rel="external">Enviar um Elogio</a></li>
+					<li><a href="blogs.html" data-transition="slide" rel="external" data-prefetch>Blogs</a></li>
+					<li><a id="Fal" href="http://iemobile.com.br/pdr/html/contact.php" onclick="checkConnection()" data-transition="slide" rel="external">Fale Com a Gente!</a></li>
+				</ul>
+				
+				<div class="shadow2box"><img src="img/shadow2.png" class="shadow2" alt="shadow"></div>
+				<!-- /navigation -->  
+			</div>
+		</div><!-- /content -->
+
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" class="custom-icons">
+				<ul>
+					<li><a href="main.html" id="home2" data-icon="custom" data-theme="b">Home</a></li>
+					<li><a href="http://goo.gl/maps/oMCPb" id="map" data-icon="custom" data-theme="b">Direções</a></li>
+					<li><a href="tel:2122663533" id="cell" data-icon="custom" data-theme="b">Falando</a></li>
+					<li><a href="produtos.html" id="presentation" data-icon="custom" data-theme="b" data-ajax="false">Produtos</a></li>
+					<li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b" data-ajax="false">Tweets</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+		<!-- /footer -->
+		
+	</div><!-- /page main -->
+		
+		
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
