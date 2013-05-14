@@ -19,9 +19,9 @@ to run in multiple devices.
 - Raymond Camden - raymondcamden.com
 - Gladston Araujo
 - PhoneGap - ;)
-- JQUery Mobile GIT - github.com/jquery/jquery-mobile
+- JQuery Mobile GIT - github.com/jquery/jquery-mobile
 
-this app was made possible with low in-house skills.
+thanks to them, this app was made possible with low in-house skills.
 
 
 
