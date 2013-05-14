@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ponto de Referência</string>
+    <string name="hello_world">Olá!</string>
+    <string name="menu_settings">Configurações</string>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+</resources>

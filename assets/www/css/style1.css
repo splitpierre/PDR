@@ -1,0 +1,1169 @@
+/*
+* Mobilize 1.3.0 
+*
+* See Themeforest for licensing info: bit.ly/J1pmCc
+*
+* By Mike Ilsley - BeantownDesign.com
+*
+*/
+
+/* =============================================================================
+   Load Fonts (delete import of fonts you don't use)
+   ========================================================================== */
+
+	.clientes
+	{
+		font-size: 18pt !important;
+		color: #333333;
+		position: relative;
+	}
+	.clientes span
+	{
+		position: relative;
+		float:left;
+		padding:3px 20px;
+	}
+   
+/* =============================================================================
+   Custom content styling
+   ========================================================================== */
+
+h3.home-title {
+	margin-top:40px; 
+	text-align:center; 
+	font-weight:normal;
+	margin:10px 0 10px 0;
+	
+	/* font-family: 'Kaushan Script', cursive; font-size:26px; */
+	/* font-family: 'Lobster', cursive; font-size:28px; */
+	/* font-family: 'Cabin', sans-serif; font-weight: 700; font-size:22px; */
+ 	/* font-family: 'Cardo', serif; font-size:24px; */
+ 	font-family: 'Droid Sans', sans-serif; font-size:22px; font-weight:700  
+}
+
+.padd {
+	padding: 20px 0
+}
+
+.gal-description {
+	font-size:11px; 
+	color: #eee
+}
+
+.padd-title {
+	padding-left:15px;
+	margin-bottom:3px
+}
+
+hr.ornamental { 
+	background:url(../img/ornamental-sm.png) center no-repeat; 
+	height:21px; 
+	width:100%; 
+	border:none; 
+	margin:0; 
+	padding:0 
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
+hr.ornamental { 
+	background:url(../img/ornamental.png) center no-repeat; 
+	background-size:960px 21px; 
+	height:21px; 
+	width:100%; 
+	border:none; 
+	margin:0; 
+	padding:0 
+}
+}
+
+.shadow1box {
+	text-align:center; 
+	margin:0; 
+	height:28px
+}
+
+.shadow1 {
+	width:100%; 
+	height:28px; 
+	margin:0
+}
+
+.shadow2box { margin:0 }
+.shadow2 { width:100% }
+.clear { clear:both }
+
+
+/* =============================================================================
+   UI Bars (add to a div surrounding content, like a callout box)
+   ========================================================================== */
+   
+
+.ui-bar-c {
+	border: 1px solid  #B3B3B3;
+	background:  #e9eaeb;
+	color:  #111;
+	font-weight: bold;
+	text-shadow:  0  1px 1px #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(  #f0f0f0  /*{background-start}*/), to(  #e9eaeb  /*{background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(  #f0f0f0  /*{background-start}*/,  #e9eaeb  /*{background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(  #f0f0f0  /*{background-start}*/,  #e9eaeb  /*{background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient(  #f0f0f0  /*{background-start}*/,  #e9eaeb  /*{background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient(  #f0f0f0  /*{background-start}*/,  #e9eaeb  /*{background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient(  #f0f0f0  /*{background-start}*/,  #e9eaeb  /*{background-end}*/);
+}
+
+.ui-bar-c .ui-link-inherit {
+	color:  	#3E3E3E;
+}
+.ui-bar-c .ui-link {
+	color:  #7cc4e7;
+	font-weight: bold;
+}
+
+.ui-bar-c .ui-link:hover {
+	color:  #2489CE;
+}
+
+.ui-bar-c .ui-link:active {
+	color:  #2489CE;
+}
+
+.ui-bar-c .ui-link:visited {
+    color:  #2489CE;
+}
+
+.ui-bar-c,
+.ui-bar-c input,
+.ui-bar-c select,
+.ui-bar-c textarea,
+.ui-bar-c button {
+	 font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* =============================================================================
+   Dialog (Modal Windows)
+   ========================================================================== */
+   
+.ui-dialog {
+	background:url(../img/pattern2.png) #222 !important;
+	background-size: 20px 20px !important;
+}
+
+#slide-modal .ui-dialog-contain { margin-top:0px }
+
+/* =============================================================================
+   Set your main background image & text styles
+   ========================================================================== */
+   
+
+.ui-body-c,
+.ui-dialog.ui-overlay-c {
+	border: 1px solid #B3B3B3;
+	/* background:url(../img/page-backgrounds/diagonal-noise.jpg) 0 0; background-size: 100px 100px; */
+	/* background:url(../img/page-backgrounds/zebra.jpg) 0 0; background-size: 121px 38px; */
+	/* background:url(../img/page-backgrounds/paper.jpg) 0 0; background-size: 500px 593px;  */
+	/* background:url(../img/page-backgrounds/farmer.jpg) 0 0; background-size: 349px 349px; */
+	 /* background:url(../img/page-backgrounds/blue-stripes.jpg) 0 0; background-size: 100px 100px; */
+	 background:url(../img/page-backgrounds/texture.jpg) 0 0; background-size: 476px 476px; 
+	/* background:url(../img/page-backgrounds/white-brick-wall.jpg) 0 0; background-size: 25px 17px; */
+	/* background:url(../img/page-backgrounds/grilled.jpg) 0 0; background-size: 170px 180px;  */
+	/* background:url(../img/page-backgrounds/wood.jpg) 0 0; background-size: 203px 317px; */
+	color: #111;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.ui-body-c,
+.ui-body-c input,
+.ui-body-c select,
+.ui-body-c textarea,
+.ui-body-c button {
+	
+	/* font-family: Helvetica, Arial, sans-serif; */
+ 	/* font-family: 'Cabin', sans-serif; */
+	/* font-family: 'Goudy Bookletter 1911', serif; */
+ 	/* font-family: 'Crimson Text', serif; */
+ 	 /* font-family: 'Cardo', serif; */
+	  font-family: 'Droid Sans', sans-serif; 
+}
+
+
+/* =============================================================================
+   Body Links
+   ========================================================================== */
+
+.ui-body-c .ui-link-inherit {
+	color:  #3a7591;
+}
+
+.ui-body-c .ui-link {
+	color:  #3a7591;
+	font-weight: bold;
+}
+
+.ui-body-c .ui-link:hover {
+	color:  #3a7591;
+}
+
+.ui-body-c .ui-link:active {
+	color:  #3a7591;
+}
+
+.ui-body-c .ui-link:visited {
+    color:  #3a7591;
+}
+
+
+/* =============================================================================
+   Button Styles
+   ========================================================================== */
+
+.ui-btn-up-c {
+	border: 1px solid #111;
+	background: #0A202B;
+	font-weight: bold;
+	color: #fff !important;
+	text-shadow:  0 1px 1px #111;
+}
+
+.ui-btn-up-c a.ui-link-inherit {
+	color: #fff;
+}
+
+.ui-btn-hover-c {
+	border: 1px solid #000;
+	background: #0C2430;
+	font-weight: bold;
+	color: #fcd144 !important;
+	text-shadow:  0 1px 1px #000;
+}
+
+.ui-btn-hover-c a.ui-link-inherit {
+	color: #fff;
+}
+
+.ui-btn-down-c {
+	border: 1px solid  #000;
+	background: #071a23;
+	font-weight: bold;
+	color:  #fcd144 !important;
+	text-shadow:  0 1px 1px #000;
+}
+
+.ui-btn-down-c a.ui-link-inherit {
+	color:  #fff;
+}
+
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c { 
+	text-decoration: none;
+}
+
+.ui-btn-inner {
+    border-color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #1a3d4f;
+}
+
+
+/* Active class used as the "on" state across all themes, example: newsletter button on form */
+
+.ui-btn-active {
+	border: 1px solid #111;
+	background: #071a23;
+	font-weight: bold;
+	color:#fcd144;
+	cursor: pointer;
+	text-shadow:  0 1px 1px #000;
+	text-decoration: none;
+}
+
+.ui-btn-active a.ui-link-inherit {
+	color: 	#fff;
+}
+
+
+/* =============================================================================
+   Interior Banner Styles
+   ========================================================================== */
+
+.bannerContainer { 
+	width:100%; 
+	background:#111;    
+}
+
+.banner {
+	max-width: 100%; 
+	display: block; 
+	max-height:295px; 
+	margin:0 auto;
+}
+
+
+/* =============================================================================
+   Page Title under Banner Image
+   ========================================================================== */
+
+h2.pageTitle { 
+	text-transform:uppercase; 
+	background:url(../img/pattern.png) #0A202B; background-size: 5px 5px;
+	border-bottom:1px solid #aaa;
+	color:#fcd144; 
+	width:100%; 
+	margin:0;
+	padding:0;
+	font-family: 'Kaushan Script', cursive; 
+	text-shadow: 0 1px 0 #fff; 
+	font-weight:normal; 
+}
+
+h2.pageTitle span { 
+	display:block; 
+	padding:8px 0 5px 15px
+}
+
+
+/* =============================================================================
+   Header Bar (behind logo) & Logo
+   ========================================================================== */
+
+.page-header { 
+	border:0px;
+	border-bottom:1px solid #bfc0c0; 
+	color:#eee; 
+	height:50px; 
+	text-shadow: 0 -1px 1px #000; 
+	background:url(../img/pattern.png) #111; background-size: 5px 5px;
+} 
+
+.logo { 
+	width:231px; 
+	height:50px; 
+	background:url(../img/logo-sm.png) top center no-repeat;  
+	margin:0 auto;  
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
+.logo { 
+	width:231px; 
+	height:50px; 
+	background:url(../img/logo.png) top center no-repeat;  
+	margin:0 auto;
+	background-size: 185px 40px;
+}
+}
+
+h1.ui-title { 
+	margin:0px; 
+	padding:10px 0 0 0
+}
+
+
+/* =============================================================================
+   Link Bars with Large Arrows
+   ========================================================================== */
+
+li .ui-btn-text {background:url(../img/pattern2.png) #0A202B; background-size: 20px 20px;}
+
+a.ui-link-inherit {
+	background:url(../img/arrow.png) right no-repeat; 
+	background-size: 25px 30px;
+	
+	/* font-family: 'Kaushan Script', cursive; font-size:18px; */
+	/* font-family: 'Lobster', cursive; font-size:18px; */
+	/* font-family: 'Cabin', sans-serif; font-weight: 700; font-size:18px; */
+	 font-family: Helvetica, Arial, sans-serif; font-weight:700;  font-size:15px; line-height:25px;
+	
+	color:#eee !important;
+	text-shadow: 0 -1px 1px #000;
+	text-decoration:none
+}
+	
+a.ui-link-inherit:hover {
+	background:url(../img/arrow.png) right no-repeat #0C2430;
+	background-size: 25px 30px;
+	color:#fcd144 !important; 
+}
+
+
+
+/* =============================================================================
+   Overwrite jQuery Mobile Styles
+   ========================================================================== */
+   
+.ui-header .ui-title, .ui-footer .ui-title {
+	margin: 0.8em 90px;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding: .8em 15px;
+}
+
+.ui-content {
+	padding-top:0px
+}
+
+.page-header .ui-icon {
+	text-indent:-9999px !important
+}
+
+.gallery-page h1.ui-title {
+    margin: 0px;
+    padding: 0px;
+	position:relative;
+	top:13px
+}
+
+.ui-btn-icon-notext .ui-btn-inner { z-index:9999 }
+
+.ui-btn-corner-all {
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+li.ui-li-divider  { border:0px }
+
+.ui-corner-top {
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+.ui-corner-bottom, .ui-corner-bottom .ui-link-inherit {
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
+    background: rgba(255, 255, 255, 0.5); 
+}
+.ui-field-contain input.ui-input-text:focus, .ui-field-contain textarea.ui-input-text:focus, .ui-field-contain .ui-input-search:focus {
+	background: rgba(255, 255, 255, 0.7); 
+}
+
+ .ui-footer { max-width:100% !important; overflow:hidden !important }
+ 
+
+/* =============================================================================
+   List Styles
+   ========================================================================== */
+
+/* thumbail lists */
+.events-list  ul.ui-listview li, .thumbnail-list ul.ui-listview li {
+	margin:0; 
+	padding:0; 
+	border-bottom:0px; 	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.thumbnail-list a.ui-link-inherit, 
+.events-list ul.ui-listview a.ui-link-inherit {
+    color: #fff;
+}
+
+.thumbnail-list a.ui-link-inherit:hover, .events-list ul.ui-listview a.ui-link-inherit:hover {
+    color: #2489CE;
+}
+	
+.thumbnail-list ul.ui-listview li a.ui-link-inherit { 
+	padding-left: 100px; 
+}
+
+.thumbnail-list ul.ui-listview .ui-btn-inner { 
+	margin:0; 
+	padding:0;  
+	border-bottom:0px 
+}
+
+.thumbnail-list li.ui-corner-bottom {
+	padding-bottom:1px !important
+}
+
+.ui-li-thumb {
+    left: 4px;
+    max-height: 80px;
+    max-width: 80px;
+    position: absolute;
+    top: 4px;
+	border:0px;	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit {
+	padding: 0.7em 15px
+}
+
+.events-list .ui-li-aside {
+    float: right;
+    margin: 0.3em 0;
+    text-align: right;
+    width: 22%;
+}
+
+.ui-li-aside {
+    margin: 0 2em;
+}
+
+.events-list .ui-li {
+	padding:0; 
+	margin:0
+}
+
+li.ui-li-divider { 
+	padding: 0.5em 15px !important 
+}
+
+
+/* list divider, create your own gradient: http://www.colorzilla.com/gradient-editor/ */
+li.ui-li-divider {
+	color: #111;
+    text-shadow: 0 1px 0 #999;	
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+}
+
+
+/* =============================================================================
+   Footer Navigation
+   ========================================================================== */
+
+.ui-btn-up-b { 
+	border: 1px solid #333;
+	background:url(../img/pattern.png) #111; background-size: 5px 5px;
+	font-weight: bold;
+	color: 	#EDE574 !important;
+	text-shadow: 0 -1px 1px #000;
+}
+
+.ui-btn-up-b a.ui-link-inherit {
+	color: 	#fff;
+}
+
+.ui-btn-hover-b {
+	border: 1px solid #000;
+	background: #0C2430;
+	font-weight: bold;
+	color: 	#fff;
+	text-shadow: 0  -1px 1px  #014D68;	
+}
+
+.ui-btn-hover-b a.ui-link-inherit {
+	color: 	#fff;
+}
+
+.ui-btn-down-b {
+	border: 1px solid #333;
+	background: #071a23;
+	font-weight: bold;
+	color: 	#fff;
+	text-shadow: 0 -1px 1px #225377;
+}
+
+.ui-btn-down-b a.ui-link-inherit {
+	color: 	#fff;
+}
+
+.ui-btn-up-b,
+.ui-btn-hover-b,
+.ui-btn-down-b {
+	
+	/* font-family: Helvetica, Arial, sans-serif; */
+ 	/* font-family: 'Cabin', sans-serif;  
+	/* font-family: 'Goudy Bookletter 1911', serif; */
+ 	/* font-family: 'Crimson Text', serif; */
+ 	/*  font-family: 'Cardo', serif; */
+	 font-family: 'Droid Sans', sans-serif; 
+	 
+	text-decoration: none;
+}
+
+.ui-footer .ui-btn-text { background:none }
+
+
+/* =============================================================================
+   Footer Nav Icons --[ Recommend to delete CSS for icons you don't use ]--
+   ========================================================================== */
+
+.custom-icons .ui-btn .ui-btn-inner { 
+	padding-top: 40px !important; 
+}
+
+.custom-icons .ui-btn .ui-icon { 
+	width: 30px!important; 
+	height: 30px!important; 
+	margin-left: -15px !important; 
+	box-shadow: none!important; 
+	-moz-box-shadow: none!important; 
+	-webkit-box-shadow: none!important; 
+	-webkit-border-radius: 0 !important; 
+	border-radius: 0 !important; 
+}
+
+#address-book .ui-icon { background:url(../img/nav-icons/address-book-sm.png) 50% 50% no-repeat; }
+#apartments .ui-icon { background:url(../img/nav-icons/apartments-sm.png) 50% 50% no-repeat; }
+#balloons .ui-icon { background:url(../img/nav-icons/balloons-sm.png) 50% 50% no-repeat; }
+#brush .ui-icon { background:url(../img/nav-icons/brush-sm.png) 50% 50% no-repeat; }
+#brush2 .ui-icon { background:url(../img/nav-icons/brush2-sm.png) 50% 50% no-repeat; }
+#calendar .ui-icon { background:url(../img/nav-icons/calendar-sm.png) 50% 50% no-repeat; }
+#calendar2 .ui-icon { background:url(../img/nav-icons/calendar2-sm.png) 50% 50% no-repeat; }
+#camera .ui-icon { background:url(../img/nav-icons/camera-sm.png) 50% 50% no-repeat; }
+#car .ui-icon { background:url(../img/nav-icons/car-sm.png) 50% 50% no-repeat; }
+#cell .ui-icon { background:url(../img/nav-icons/cell-sm.png) 50% 50% no-repeat; }
+#cell2 .ui-icon { background:url(../img/nav-icons/cell2-sm.png) 50% 50% no-repeat; }
+#cell3 .ui-icon { background:url(../img/nav-icons/cell3-sm.png) 50% 50% no-repeat; }
+#chair .ui-icon { background:url(../img/nav-icons/chair-sm.png) 50% 50% no-repeat; }
+#chat .ui-icon { background:url(../img/nav-icons/chat-sm.png) 50% 50% no-repeat; }
+#chat2 .ui-icon { background:url(../img/nav-icons/chat2-sm.png) 50% 50% no-repeat; }
+#closed .ui-icon { background:url(../img/nav-icons/closed-sm.png) 50% 50% no-repeat; }
+#dribble .ui-icon { background:url(../img/nav-icons/dribble-sm.png) 50% 50% no-repeat; }
+#eye .ui-icon { background:url(../img/nav-icons/eye-sm.png) 50% 50% no-repeat; }
+#facebook .ui-icon { background:url(../img/nav-icons/facebook-sm.png) 50% 50% no-repeat; }
+#film .ui-icon { background:url(../img/nav-icons/film-sm.png) 50% 50% no-repeat; }
+#flag .ui-icon { background:url(../img/nav-icons/flag-sm.png) 50% 50% no-repeat; }
+#footprint .ui-icon { background:url(../img/nav-icons/footprint-sm.png) 50% 50% no-repeat; }
+#footprints .ui-icon { background:url(../img/nav-icons/footprints-sm.png) 50% 50% no-repeat; }
+#globe .ui-icon { background:url(../img/nav-icons/globe-sm.png) 50% 50% no-repeat; }
+#home .ui-icon { background:url(../img/nav-icons/home-sm.png) 50% 50% no-repeat; }
+#home2 .ui-icon { background:url(../img/nav-icons/home2-sm.png) 50% 50% no-repeat; }
+#icecream .ui-icon { background:url(../img/nav-icons/icecream-sm.png) 50% 50% no-repeat; }
+#key .ui-icon { background:url(../img/nav-icons/key-sm.png) 50% 50% no-repeat; }
+#like .ui-icon { background:url(../img/nav-icons/like-sm.png) 50% 50% no-repeat; }
+#mail .ui-icon { background:url(../img/nav-icons/mail-sm.png) 50% 50% no-repeat; }
+#mail2 .ui-icon { background:url(../img/nav-icons/mail2-sm.png) 50% 50% no-repeat; }
+#map-marker .ui-icon { background:url(../img/nav-icons/map-marker-sm.png) 50% 50% no-repeat; }
+#map .ui-icon { background:url(../img/nav-icons/map-sm.png) 50% 50% no-repeat; }
+#monitor .ui-icon { background:url(../img/nav-icons/monitor-sm.png) 50% 50% no-repeat; }
+#mouse .ui-icon { background:url(../img/nav-icons/mouse-sm.png) 50% 50% no-repeat; }
+#movie-camera .ui-icon { background:url(../img/nav-icons/movie-camera-sm.png) 50% 50% no-repeat; }
+#movie .ui-icon { background:url(../img/nav-icons/movie-sm.png) 50% 50% no-repeat; }
+#music .ui-icon { background:url(../img/nav-icons/music-sm.png) 50% 50% no-repeat; }
+#paint-brush .ui-icon { background:url(../img/nav-icons/paint-brush-sm.png) 50% 50% no-repeat; }
+#pen .ui-icon { background:url(../img/nav-icons/pen-sm.png) 50% 50% no-repeat; }
+#pencil .ui-icon { background:url(../img/nav-icons/pencil-sm.png) 50% 50% no-repeat; }
+#phone .ui-icon { background:url(../img/nav-icons/phone-sm.png) 50% 50% no-repeat; }
+#phone2 .ui-icon { background:url(../img/nav-icons/phone2-sm.png) 50% 50% no-repeat; }
+#phone3 .ui-icon { background:url(../img/nav-icons/phone3-sm.png) 50% 50% no-repeat; }
+#photos .ui-icon { background:url(../img/nav-icons/photos-sm.png) 50% 50% no-repeat; }
+#photos2 .ui-icon { background:url(../img/nav-icons/photos2-sm.png) 50% 50% no-repeat; }
+#plane .ui-icon { background:url(../img/nav-icons/plane-sm.png) 50% 50% no-repeat; }
+#plate .ui-icon { background:url(../img/nav-icons/plate-sm.png) 50% 50% no-repeat; }
+#popsicle .ui-icon { background:url(../img/nav-icons/popsicle-sm.png) 50% 50% no-repeat; }
+#presentation .ui-icon { background:url(../img/nav-icons/presentation-sm.png) 50% 50% no-repeat; }
+#rss .ui-icon { background:url(../img/nav-icons/rss-sm.png) 50% 50% no-repeat; }
+#run .ui-icon { background:url(../img/nav-icons/run-sm.png) 50% 50% no-repeat; }
+#search .ui-icon { background:url(../img/nav-icons/search-sm.png) 50% 50% no-repeat; }
+#sign .ui-icon { background:url(../img/nav-icons/sign-sm.png) 50% 50% no-repeat; }
+#table .ui-icon { background:url(../img/nav-icons/table-sm.png) 50% 50% no-repeat; }
+#twitter .ui-icon { background:url(../img/nav-icons/twitter-sm.png) 50% 50% no-repeat; }
+#twitter2 .ui-icon { background:url(../img/nav-icons/twitter2-sm.png) 50% 50% no-repeat; }
+#users .ui-icon { background:url(../img/nav-icons/users-sm.png) 50% 50% no-repeat; }
+#v-card .ui-icon { background:url(../img/nav-icons/v-card-sm.png) 50% 50% no-repeat; }
+#walk .ui-icon { background:url(../img/nav-icons/walk-sm.png) 50% 50% no-repeat; }
+#wine .ui-icon { background:url(../img/nav-icons/wine-sm.png) 50% 50% no-repeat; }
+#wine2 .ui-icon { background:url(../img/nav-icons/wine2-sm.png) 50% 50% no-repeat; }
+#wordpress .ui-icon { background:url(../img/nav-icons/wordpress-sm.png) 50% 50% no-repeat; }
+#you-tube .ui-icon { background:url(../img/nav-icons/you-tube-sm.png) 50% 50% no-repeat; }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
+#address-book .ui-icon { background:url(../img/nav-icons/address-book.png) 50% 50% no-repeat;  background-size: 25px 29px; }
+#apartments .ui-icon { background:url(../img/nav-icons/apartments.png) 50% 50% no-repeat;  background-size: 28px 31px; }
+#balloons .ui-icon { background:url(../img/nav-icons/balloons.png) 50% 50% no-repeat;  background-size: 23px 32px; }
+#brush .ui-icon { background:url(../img/nav-icons/brush.png) 50% 50% no-repeat;  background-size: 31px 28px; }
+#brush2 .ui-icon { background:url(../img/nav-icons/brush2.png) 50% 50% no-repeat;  background-size: 28px 29px; }
+#calendar .ui-icon { background:url(../img/nav-icons/calendar.png) 50% 50% no-repeat;  background-size: 30px 26px; }
+#calendar2 .ui-icon { background:url(../img/nav-icons/calendar2.png) 50% 50% no-repeat;  background-size: 28px 29px; }
+#camera .ui-icon { background:url(../img/nav-icons/camera.png) 50% 50% no-repeat;  background-size: 29px 22px; }
+#car .ui-icon { background:url(../img/nav-icons/car.png) 50% 50% no-repeat;  background-size: 30px 16px; }
+#cell .ui-icon { background:url(../img/nav-icons/cell.png) 50% 50% no-repeat;  background-size: 18px 30px; }
+#cell2 .ui-icon { background:url(../img/nav-icons/cell2.png) 50% 50% no-repeat;  background-size: 17px 30px; }
+#cell3 .ui-icon { background:url(../img/nav-icons/cell3.png) 50% 50% no-repeat;  background-size: 15px 30px; }
+#chair .ui-icon { background:url(../img/nav-icons/chair.png) 50% 50% no-repeat;  background-size: 20px 27px; }
+#chat .ui-icon { background:url(../img/nav-icons/chat.png) 50% 50% no-repeat;  background-size: 28px 21px; }
+#chat2 .ui-icon { background:url(../img/nav-icons/chat2.png) 50% 50% no-repeat;  background-size: 27px 25px; }
+#closed .ui-icon { background:url(../img/nav-icons/closed.png) 50% 50% no-repeat;  background-size: 27px 25px; }
+#dribble .ui-icon { background:url(../img/nav-icons/dribble.png) 50% 50% no-repeat;  background-size: 28px 29px; }
+#eye .ui-icon { background:url(../img/nav-icons/eye.png) 50% 50% no-repeat;  background-size: 30px 18px; }
+#facebook .ui-icon { background:url(../img/nav-icons/facebook.png) 50% 50% no-repeat;  background-size: 26px 27px; }
+#film .ui-icon { background:url(../img/nav-icons/film.png) 50% 50% no-repeat;  background-size: 23px 26px; }
+#flag .ui-icon { background:url(../img/nav-icons/flag.png) 50% 50% no-repeat;  background-size: 23px 27px; }
+#footprint .ui-icon { background:url(../img/nav-icons/footprint.png) 50% 50% no-repeat;  background-size: 13px 30px; }
+#footprints .ui-icon { background:url(../img/nav-icons/footprints.png) 50% 50% no-repeat;  background-size: 27px 30px; }
+#globe .ui-icon { background:url(../img/nav-icons/globe.png) 50% 50% no-repeat;  background-size: 28px 28px; }
+#home .ui-icon { background:url(../img/nav-icons/home.png) 50% 50% no-repeat;  background-size: 27px 25px; }
+#home2 .ui-icon { background:url(../img/nav-icons/home2.png) 50% 50% no-repeat;  background-size: 29px 26px; }
+#icecream .ui-icon { background:url(../img/nav-icons/icecream.png) 50% 50% no-repeat;  background-size: 18px 27px; }
+#key .ui-icon { background:url(../img/nav-icons/key.png) 50% 50% no-repeat;  background-size: 15px 30px; }
+#like .ui-icon { background:url(../img/nav-icons/like.png) 50% 50% no-repeat;  background-size: 25px 23px; }
+#mail .ui-icon { background:url(../img/nav-icons/mail.png) 50% 50% no-repeat;  background-size: 27px 18px; }
+#mail2 .ui-icon { background:url(../img/nav-icons/mail2.png) 50% 50% no-repeat;  background-size: 27px 19px; }
+#map-marker .ui-icon { background:url(../img/nav-icons/map-marker.png) 50% 50% no-repeat;  background-size: 19px 26px; }
+#map .ui-icon { background:url(../img/nav-icons/map.png) 50% 50% no-repeat;  background-size: 30px 22px; }
+#monitor .ui-icon { background:url(../img/nav-icons/monitor.png) 50% 50% no-repeat;  background-size: 29px 29px; }
+#mouse .ui-icon { background:url(../img/nav-icons/mouse.png) 50% 50% no-repeat;  background-size: 18px 27px; }
+#movie-camera .ui-icon { background:url(../img/nav-icons/movie-camera.png) 50% 50% no-repeat;  background-size: 30px 23px; }
+#movie .ui-icon { background:url(../img/nav-icons/movie.png) 50% 50% no-repeat;  background-size: 24px 30px; }
+#music .ui-icon { background:url(../img/nav-icons/music.png) 50% 50% no-repeat;  background-size: 17px 30px; }
+#paint-brush .ui-icon { background:url(../img/nav-icons/paint-brush.png) 50% 50% no-repeat;  background-size: 30px 29px; }
+#pen .ui-icon { background:url(../img/nav-icons/pen.png) 50% 50% no-repeat;  background-size: 27px 27px; }
+#pencil .ui-icon { background:url(../img/nav-icons/pencil.png) 50% 50% no-repeat;  background-size: 26px 26px; }
+#phone .ui-icon { background:url(../img/nav-icons/phone.png) 50% 50% no-repeat;  background-size: 29px 30px; }
+#phone2 .ui-icon { background:url(../img/nav-icons/phone2.png) 50% 50% no-repeat;  background-size: 30px 25px; }
+#phone3 .ui-icon { background:url(../img/nav-icons/phone3.png) 50% 50% no-repeat;  background-size: 30px 21px; }
+#photos .ui-icon { background:url(../img/nav-icons/photos.png) 50% 50% no-repeat;  background-size: 30px 24px; }
+#photos2 .ui-icon { background:url(../img/nav-icons/photos2.png) 50% 50% no-repeat;  background-size: 30px 23px; }
+#plane .ui-icon { background:url(../img/nav-icons/plane.png) 50% 50% no-repeat;  background-size: 30px 29px; }
+#plate .ui-icon { background:url(../img/nav-icons/plate.png) 50% 50% no-repeat;  background-size: 30px 20px; }
+#popsicle .ui-icon { background:url(../img/nav-icons/popsicle.png) 50% 50% no-repeat;  background-size: 15px 30px; }
+#presentation .ui-icon { background:url(../img/nav-icons/presentation.png) 50% 50% no-repeat;  background-size: 29px 30px; }
+#rss .ui-icon { background:url(../img/nav-icons/rss.png) 50% 50% no-repeat;  background-size: 29px 30px; }
+#run .ui-icon { background:url(../img/nav-icons/run.png) 50% 50% no-repeat;  background-size: 25px 30px; }
+#search .ui-icon { background:url(../img/nav-icons/search.png) 50% 50% no-repeat;  background-size: 28px 30px; }
+#sign .ui-icon { background:url(../img/nav-icons/sign.png) 50% 50% no-repeat;  background-size: 30px 30px; }
+#table .ui-icon { background:url(../img/nav-icons/table.png) 50% 50% no-repeat;  background-size: 24px 25px; }
+#twitter .ui-icon { background:url(../img/nav-icons/twitter.png) 50% 50% no-repeat;  background-size: 32px 24px; }
+#twitter2 .ui-icon { background:url(../img/nav-icons/twitter2.png) 50% 50% no-repeat;  background-size: 30px 21px; }
+#users .ui-icon { background:url(../img/nav-icons/users.png) 50% 50% no-repeat;  background-size: 30px 24px; }
+#v-card .ui-icon { background:url(../img/nav-icons/v-card.png) 50% 50% no-repeat;  background-size: 30px 23px; }
+#walk .ui-icon { background:url(../img/nav-icons/walk.png) 50% 50% no-repeat;  background-size: 18px 30px; }
+#wine .ui-icon { background:url(../img/nav-icons/wine.png) 50% 50% no-repeat;  background-size: 17px 30px; }
+#wine2 .ui-icon { background:url(../img/nav-icons/wine2.png) 50% 50% no-repeat;  background-size: 18px 30px; }
+#wordpress .ui-icon { background:url(../img/nav-icons/wordpress.png) 50% 50% no-repeat;  background-size: 28px 28px; }
+#you-tube .ui-icon { background:url(../img/nav-icons/you-tube.png) 50% 50% no-repeat;  background-size: 30px 30px; }	
+}
+
+
+/* =============================================================================
+   Portfolio
+   ========================================================================== */
+
+.gallery { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+}
+
+.gallery:after { 
+	clear: both; 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	visibility: hidden; 
+}
+
+.gallery li { 
+	float: left; 
+	width: 33.33333333%; 
+}
+
+.gallery li a { 
+	display: block; 
+	margin: 5px; 
+	border: 1px solid #3c3c3c; 
+}
+
+.gallery li img { 
+	display: block; 
+	width: 100%; 
+	height: auto; 
+}
+
+#Gallery1 .ui-content, #Gallery2 .ui-content { 
+	overflow: hidden; 
+}
+
+.gallery img {
+	-webkit-box-shadow: 0px 0px 4px #111;
+	-moz-box-shadow: 0px 0px 4px #111;
+	box-shadow: 0px 0px 4px #111; 
+}
+
+
+/* =============================================================================
+   Homepage Social Icons
+   ========================================================================== */
+   
+div.social {
+	text-align:center;
+	background-color:rgba(238,238,238,0.4);
+	padding:4px;
+	border:1px solid #ccc;
+	-webkit-transition-duration:0.8s;
+  	-moz-transition-duration:0.8s;
+  	-o-transition-duration:0.8s;
+  	transition-duration:0.8s;
+} 
+
+div.social:hover {
+	background-color:rgba(238,238,238,.6);
+	border:1px solid #c1bfbf;	
+}
+
+div.social img {
+	width:12%; 
+	margin-right:10px;
+	max-width:60px;
+	max-height:60px
+	
+}
+
+
+/* =============================================================================
+   Twitter Feed
+   ========================================================================== */
+
+ul.tweetList{
+	margin:0;
+	padding:0; 
+	list-style-type:none
+}
+
+#jstwitter {
+	width:100%;
+	background:url(../img/twitterBack.png) repeat;
+	-moz-border-radius: 6px;
+	border-radius: 6px; 
+	padding:0px;
+	-webkit-box-shadow:  1px 1px 1px #0f0f0f;
+	-moz-box-shadow: 1px 1px 1px #0f0f0f;
+	box-shadow: 1px 1px 1px #0f0f0f; 	
+}
+
+.tweet {
+	padding: 15px 20px;
+	color:#FFF;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #353434;
+	text-shadow: 0 1px 0 #000;
+	margin: 0 10px;
+	font-size:13px
+}
+		
+.followButton {
+	margin:0 0 20px 0
+}
+
+.time {
+	font-size: 11px;
+	font-style:italic
+}
+	
+.tweet a {
+    color: #2489CE;
+    font-weight: bold;
+}
+
+#jstwitter div.tweet:last-child {
+	border:0px
+}
+
+
+/* =============================================================================
+   Contact Form
+   ========================================================================== */
+
+#errors {
+	border:1px solid #cd0a0a;
+	background:url(../img/contact-error.png) 50% 50% repeat;
+	color:#fff;
+	padding: 5px; 
+	text-shadow:0 1px 0 #111
+}
+
+.hide{
+	display:none
+}
+
+
+/* =============================================================================
+   Homepage Slider
+   ========================================================================== */
+
+.camera_wrap a, .camera_wrap img, 
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li,
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img, 
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li,
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td {
+	background: none;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none
+}
+.camera_wrap {
+	display: none;
+	float: left;
+	position: relative;
+	z-index: 0;
+}
+.camera_wrap img {
+	max-width: none!important;
+}
+.camera_fakehover {
+	height: 100%;
+	min-height: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.camera_wrap {
+	width: 100%;
+}
+.camera_src {
+	display: none;
+}
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.camera_target_content .camera_link {
+    background: url(../img/blank.gif);
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+.camera_loader {
+    background: #fff url(../img/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(../img/camera-loader.gif) no-repeat center;
+	border: 1px solid #ffffff;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	height: 36px;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	margin: -18px 0 0 -18px;
+	top: 50%;
+	width: 36px;
+	z-index: 3;
+}
+.camera_bar {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+.camera_nav_cont {
+	height: 65px;
+	overflow: hidden;
+	position: absolute;
+	right: 9px;
+	top: 15px;
+	width: 120px;
+	z-index: 4;
+}
+.camera_caption {
+	bottom: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+.camera_caption > div {
+	padding: 10px 20px;
+}
+.camerarelative {
+	overflow: hidden;
+	position: relative;
+}
+.imgFake {
+	cursor: pointer;
+}
+
+.camera_command_wrap .hideNav {
+	display: none;
+}
+.camera_command_wrap {
+	left: 0;
+	position: relative;
+	right:0;
+	z-index: 4;
+}
+.camera_prev, .camera_next, .camera_commands {
+	cursor: pointer;
+	height: 40px;
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	z-index: 2;
+}
+.camera_prev {
+	left: 0;
+}
+
+.camera_next {
+	right: 0;
+}
+
+.camera_commands {
+	right: 41px;
+}
+
+.camera_clear {
+	display: block;
+	clear: both;
+}
+.showIt {
+	display: none;
+}
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: -1px 0 25px;
+	position: relative;
+}
+
+.slider-container { 
+	width:100%; 
+	max-width:548px; 
+	margin: 0 auto 
+}
+
+.slider-outer { 
+	background:#111;  
+}
+
+.camera_next > span {
+    background:url(../img/right-arrow-small.png) 0 0 no-repeat;
+    display: block;
+    height: 50px;
+    width: 39px;
+	border:0px;
+	position:relative; 
+	right:-1px
+}
+
+.camera_prev > span {
+    background:url(../img/left-arrow-small.png) 0 0 no-repeat;
+    display: block;
+    height: 50px;
+    width: 39px;
+}
+
+.camera_caption > div { 
+	text-align:center;     
+	padding: 10px 0; 
+	background: rgba(0,0,0,.5); 
+	color: #fff; 
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+	font-size: 16px; 
+	line-height: 18px; 
+	
+	font-family: 'Kaushan Script', cursive; font-size:18px;
+	/* font-family: 'Lobster', cursive; font-size:17px;  */
+ 	/* font-family: 'Cardo', serif; font-size:16px; */
+ 	/* font-family: 'Droid Sans', sans-serif; font-size:16px */
+}
+
+/* =============================================================================
+   jQuery Mobile 1.3 Edits
+   ========================================================================== */
+.ui-content { padding:0 }
+.content-padd { padding:15px }
+.ui-body-c, .ui-dialog.ui-overlay-c { border:0px !important }
+.ui-li { overflow:hidden !important }
+.ui-panel-inner { padding:0 }
+.ui-panel-inner .ui-listview-filter { margin:0 !important }
+.ui-panel-inner .ui-listview, .ui-panel-inner .events-list ul.ui-listview li { max-width:100% !important; margin:0 !important }
+.ui-panel {z-index:10000}
+
+
+
+/* =============================================================================
+   Margins / Padding
+   ========================================================================== */
+.mt10 { margin-top:10px !important }
+.mt15 { margin-top:15px !important }
+.mt20 { margin-top:20px !important }
+.mt25 { margin-top:25px !important }
+.mt30 { margin-top:30px !important }
+.mt35 { margin-top:35px !important }
+.mb10 { margin-bottom:10px !important }
+.mb15 { margin-bottom:15px !important }
+.mb20 { margin-bottom:20px !important }
+.mb25 { margin-bottom:25px !important }
+.mb30 { margin-bottom:30px !important }
+.mb35 { margin-bottom:35px !important }
+
+.pt10 { padding-top:10px !important }
+.pt15 { padding-top:15px !important }
+.pt20 { padding-top:20px !important }
+.pt25 { padding-top:25px !important }
+.pt30 { padding-top:30px !important }
+.pt35 { padding-top:35px !important }
+.pb10 { padding-bottom:10px !important }
+.pb15 { padding-bottom:15px !important }
+.pb20 { padding-bottom:20px !important }
+.pb25 { padding-bottom:25px !important }
+.pb30 { padding-bottom:30px !important }
+.pb35 { padding-bottom:35px !important }
+
+
